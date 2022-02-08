@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color:hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    
+}
+
+.main-card{
+    background-color:hsl(216, 50%, 16%);
+    padding: 20px;
+    margin-top: 30px;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+
+}
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid  hsl(215, 32%, 27%);
+
+}
+
+.card-middle h3{
+    color:white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-middle p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.middle-eth-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eth-value{
+    display: flex; 
+    align-items: center;
+    
+    
+}
+
+.eth-value img{
+    margin-right: 5px;
+}
+.eth-value p{
+    color: hsl(178, 100%, 50%);
+}
+
+.eth-time{
+    display: flex;
+    align-items: center;
+}
+.eth-time img{
+    margin-right: 5px;
+
+}
+
+.card-bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.user-img{
+    width: 15%;
+    object-fit: contain;
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.user-name{
+    color: white;
+}
+.creation{
+    color: hsl(215, 51%, 70%);
+
+}
