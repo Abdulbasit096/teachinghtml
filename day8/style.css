@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+
+:root {
+  --gradient-1: hsl(13, 100%, 72%);
+  --gradient-2: hsl(353, 100%, 62%);
+  --cta: hsl(356, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --dark-grayish-blue: hsl(207, 13%, 34%);
+  --dark-black-blue: hsl(240, 10%, 16%);
+  --gray-blue: hsl(237, 17%, 21%);
+  --desaturated-blue: hsl(237, 23%, 32%);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* 
+px --fixed
+vh vw
+em --screen size 1em = 16px
+rem --screen size 1rem = 16px
+
+
+
+*/
+
+.hero {
+  background-image: url("./images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(var(--gradient-1), var(--gradient-2));
+  background-repeat: no-repeat;
+  background-size: 350%, 100%;
+  background-position: 35% 34%, 0% 0%;
+  width: 100%;
+  height: 600px;
+  border-bottom-left-radius: 100px;
+  padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 2.3rem;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5rem;
+  width: 100%;
+  color: white;
+  font-family: "Overpass";
+}
+
+.landing span {
+  display: block;
+}
+
+.landing h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.landing p {
+  margin-top: -0.2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.landing-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.btn-free {
+  border: none;
+  color: var(--cta);
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-learn-more {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.btn-free:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.btn-learn-more:hover {
+  background-color: white;
+  opacity: 80%;
+  color: var(--cta);
+  border: none;
+
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  font-family: "Overpass";
+  width: 100%;
+  color: var(--gray-blue);
+}
+
+.section-2 h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sec-2-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sec-2-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sec-2-card p {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.second-card {
+  margin-top: -5rem;
+}
+.sec-3-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sec-3-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sec-3-card p {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
