@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Jost";
+  margin: 0;
+  padding: 0;
+}
+
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid green;
+    margin: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.flex-item{
+    border: 1px solid red;
+    padding: 1rem;
+}
+
+.first{
+    flex: 1;
+}
+
+/* 
+Flex wrap -- To wrap the content when it is going out of the box
+
+Flex-grow -- To give max spacing to one of the items
+
+Flex-shrink -- To give min spacing to one of the items
+
+*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem;
+    border: 1px solid lime;
+    place-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-item{
+    border: 1px solid violet;
+    padding: 1rem;
+}
+
+.grid-first{
+  grid-column:3  / span 1;
+}
+
+
+/* 
+Grid-colums -- How many columns to display
+Place-items -- Alignment of columns
+Gap -- Spacing between columns
+Spans -- How much space a single column should take
+
+
+*/
